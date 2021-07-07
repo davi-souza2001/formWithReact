@@ -1,4 +1,5 @@
 import React from 'react';
+import './Form.css';
 
 class Form extends React.Component {
   constructor(props) {
@@ -29,17 +30,17 @@ class Form extends React.Component {
 
   render(){
     return(
-      <>
+      <div className="formu">
         <form onSubmit={this.handleSubmit}>
           <label>
-            Nome: <input type="text" value={this.state.nome} onChange={this.changeName}/>
+            Nome: <input type="text" value={this.state.nome} onChange={this.changeName} className="name"/>
           </label>
 
           <br/>
 
           <label>
-            Linguagem favorita
-            <select value={this.state.linguagem} onChange={this.changeSelect}>
+            Linguagem favorita: 
+            <select value={this.state.linguagem} onChange={this.changeSelect} className="linguage">
               <option>Javascript</option>
               <option>Python</option>
               <option>C++</option>
@@ -48,21 +49,30 @@ class Form extends React.Component {
 
           <br/>
 
-          <label>Python
-            Sou:
+          <label>
+            <div  className="imam">
+            <h4>Sou: </h4>
             <input type="radio" checked={this.state.tipo == 'programador'} onChange={this.changeRadio} value="programador"/> programador
             <input type="radio" checked={this.state.tipo == 'estudante'} onChange={this.changeRadio} value="estudante"/> estudante
+            </div>
           </label>
 
           <br/>
 
           <label>
-            Bio:
+            <div className="bio">
+            <h4>Bio:</h4>
             <textarea cols="50" value={this.state.bio} onChange={this.changeBio}/>
+            </div>
           </label>
-          <input type="submit" value="Salvar"/>
+
+          <br/>
+
+          <input type="submit" value="Salvar" className="save"/>
         </form>
-      </>
+
+      </div>
+      
     )
   }
 

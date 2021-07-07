@@ -1,0 +1,100 @@
+@keyframes change {
+    from{ 
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+       opacity: 1;
+       transform: scale(1);
+    }
+}
+.formu{
+    background-color: #E6E6FA;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    animation-name: change;
+    animation-duration: 800ms;
+}
+
+form .name{
+    margin-bottom: 30px;
+    margin-top: 80px;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'roboto', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+
+form .name:hover{
+    background-color: #F0F8FF;
+}
+
+form .linguage{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 260px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'roboto', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+form .linguage:hover{
+    background-color: #F0F8FF;
+}
+
+label .imam{
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .bio{
+    margin-top: 20px;
+}
+
+form .bio textarea{
+    border-radius: 5px;
+    height: 90px;
+    width: 400px;
+    border: none;
+    outline: none;
+    font-family: 'roboto', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+form .bio textarea:hover{
+    background-color: #F0F8FF;
+}
+
+form .save{
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+form .save:hover{
+    background-color: #F0F8FF;
+}
