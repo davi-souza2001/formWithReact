@@ -34,14 +34,14 @@ class Form extends React.Component {
       <div className="formu">
         <form onSubmit={this.handleSubmit}>
           <label>
-            Nome: <input type="text" value={this.state.nome} onChange={this.changeName} className="name"/>
+            Nome: <input type="text" value={this.state.nome} onChange={this.changeName} className="name" required/>
           </label>
 
           <br/>
 
           <label>
             Linguagem favorita: 
-            <select value={this.state.linguagem} onChange={this.changeSelect} className="linguage">
+            <select value={this.state.linguagem} onChange={this.changeSelect} className="linguage" required>
               <option>Javascript</option>
               <option>Python</option>
               <option>C++</option>
@@ -63,7 +63,7 @@ class Form extends React.Component {
           <label>
             <div className="bio">
             <h4>Bio:</h4>
-            <textarea cols="50" value={this.state.bio} onChange={this.changeBio}/>
+            <textarea cols="50" value={this.state.bio} onChange={this.changeBio} required/>
             </div>
           </label>
 
