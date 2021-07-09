@@ -28,7 +28,7 @@ class Form extends React.Component {
       this.setState({bio: event.target.value});
     }
   }
-
+  
   render(){
     return(
       <div className="formu">
@@ -69,7 +69,7 @@ class Form extends React.Component {
 
           <br/>
 
-          <input type="submit" value="Salvar" className="save"/>
+          <input type="submit" value="Salvar" className="save" />
         </form>
 
         
