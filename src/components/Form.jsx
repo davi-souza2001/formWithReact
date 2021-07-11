@@ -1,6 +1,8 @@
 import React from 'react';
 import './Form.css';
 
+/* import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+/* window.location.href ='/mensage' */ //Uma forma de passarr de pagina porem invalida */
 
 class Form extends React.Component {
   constructor(props) {
